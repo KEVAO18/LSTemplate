@@ -1,0 +1,92 @@
+@az1: #2980b9;
+@az2: #3498db;
+@ve1: #27ae60;
+@ve2: #16a085;
+@rj1: #ff5252;
+@rj2: #ff525287;
+@rj3: #ff5252cc;
+@fuente: 20px;
+
+
+.top-nav-collapse{
+	background: @rj1 !important;
+}
+
+.rojo{
+	background: @rj2;
+}
+
+footer{
+	color: #eeeeee;
+	background: @rj1;
+}
+
+.link{
+	color: #ffffff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.link:hover{
+	color: #aaaaaa;
+}
+
+.menu:hover{
+	text-shadow: 1px 1px .6px #444444;
+}
+.back{
+	animation: fondo infinite 20s linear;
+}
+
+@keyframes fondo {
+  0% {
+    background: url('../multimedia/work.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 100%;
+  }
+  50% {
+    background: url('../multimedia/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 100%;
+  }
+  100% {
+    background: url('../multimedia/work.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 100%;
+  }
+}
+
+.img-favicon{
+  padding-top:6rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 620px) {
+  .back{
+    animation: fondo infinite 20s linear;
+  }
+
+  @keyframes fondo {
+    0% {
+      background: url('../multimedia/work.jpg');
+      background-repeat: no-repeat;
+      background-position: 100% top;
+      background-size: 100%;
+    }
+    50% {
+      background: url('../multimedia/fondo.jpg');
+      background-repeat: no-repeat;
+      background-position: 100% top;
+      background-size: 100%;
+    }
+    100% {
+      background: url('../multimedia/work.jpg');
+      background-repeat: no-repeat;
+      background-position: 100% top;
+      background-size: 100%;
+    }
+  }
+}
