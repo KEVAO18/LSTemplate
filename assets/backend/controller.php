@@ -7,9 +7,10 @@
           <a class='navbar-brand' href='index.php' data-toggle='modal' data-target='#sidebar'><i style='color: #ffffff' class='fas fa-bars'></i></a>
             <ul class='navbar-nav mr-auto'>
               <li class='nav-item'>
-                <a class='nav-link' href=''>LearnSoft</a>
+                <a class='nav-link' href='index.php'>LearnSoft</a>
               </li>
             </ul>
+            <ul class='navbar-nav'><li class='nav-item' style='color:#ffffff;'>".date('Y-m-d')."</li></ul>
         </div>
       </div>
         <!-- Modal -->
@@ -29,8 +30,9 @@
                     <ul class='list-group list-group-flush'>
                       <li class='list-group-item'>
                         <center>
-											<li class='list-group-item menu'><a href='index.php' style='color: #444444cc'>Home</a></li>
-                      <li class='list-group-item menu'><a href='prod.php' style='color: #444444cc'>Projects</a></li>
+				                  <li class='list-group-item menu'><a href='index.php' style='color: #444444cc'>Home</a></li>
+                          <li class='list-group-item menu'><a href='prod.php' style='color: #444444cc'>Projects</a></li>
+                          <li class='list-group-item menu'><a href='init.php' style='color: #444444cc'>Login</a></li>
                         <center>
                       </li>
                     </ul>
@@ -60,7 +62,7 @@
         </div>
         <center>
           © 2019 Copyright: LearnSoft.
-          <a href='' target='_blank' class='link' title='GitHub'>
+          <a href='https://github.com/KEVAO18/LSTemplate' target='_blank' class='link' title='GitHub'>
             <i class='fab fa-github-alt'></i>
           </a>
           <a href='https://www.paypal.me/KevinOrrego?locale.x=es_XC' target='_blank' class='link' title='Donaciones'>
@@ -86,7 +88,7 @@
     echo "<div class='col-md-4 mb-4'>
             <div class='card'>
               <div class='card-img-top text-center py-4'>
-                <img src='assets/multimedia/".$IP[$i]."' class='' style='width: 18rem;'>
+                <img src='assets/multimedia/".$IP[$i]."' class='' style='width: 100%;'>
               </div>
               <div class='card-body'>
                 <h4 class='card-title'>".$prod."</h4>
@@ -122,5 +124,4 @@
         $i = $i+1;
     }
   }
-
 ?>

@@ -20,8 +20,16 @@
         <!-- LESS -->
         <link rel='stylesheet/less' type='text/css' href='assets/css/styles.less' />
         <script src='//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js' ></script>
-        <script src='assets/js/script1.js'></script>
         <script src="https://gumroad.com/js/gumroad.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152770313-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-152770313-2');
+        </script>
     </head> 
     <body>
       <?php
